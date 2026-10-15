@@ -1,0 +1,29 @@
+{
+  "name": "camaleon",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:movil": "vite --host --mode lan",
+    "build": "tsc --noEmit && tsc --noEmit -p tsconfig.node.json && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit && tsc --noEmit -p tsconfig.node.json",
+    "models": "node scripts/fetch-models.mjs"
+  },
+  "dependencies": {
+    "@mediapipe/tasks-vision": "^1.1.1",
+    "@preact/signals": "^2.11.3",
+    "gifenc": "^1.0.3",
+    "preact": "^11.0.1"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.10.6",
+    "@types/node": "^26.6.5",
+    "@vitejs/plugin-basic-ssl": "^2.3.0",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.4",
+    "vite-plugin-pwa": "^2.0.0",
+    "workbox-window": "^7.4.1"
+  }
+}

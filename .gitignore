@@ -1,0 +1,7 @@
+node_modules
+dist
+*.local
+.DS_Store
+
+# Copied from node_modules by vite/mediapipe.ts
+public/mediapipe/
